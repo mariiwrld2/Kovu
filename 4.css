@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6f2;
+    color: #333;
+}
+
+header {
+    background-color: #ffb3c1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img.logo-image {
+    height: 50px;
+    margin-right: 10px; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add keyframes for a bouncing animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Apply the animation to the logo */
+
+
+/* If you prefer a bounce effect, replace the spin animation */
+.logo-image:hover {
+    animation: spin 4s infinite; /* Bounces when hovered over */
+    cursor: pointer;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header .logo p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #ff4081; /* Button-like background color */
+    padding: 10px 9px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+aside {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding-top: 80px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    padding: 10px 20px;
+}
+
+aside ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin-left: 0px;
+    padding: 20px;
+}
+
+.job-details {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.job-details h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.job-details p {
+    color: #667;
+}
+
+.job-details h3 {
+    color: #333;
+}
+
+.job-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #666;
+}
+
+.job-details ul li {
+    margin-bottom: 10px;
+}
+
+.job-details h4 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
